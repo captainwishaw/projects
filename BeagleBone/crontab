@@ -1,0 +1,78 @@
+# 6AM
+30 6 * * * /root/bin/TemperatureMonitor.py
+45 6 * * * /root/bin/TemperatureMonitor.py
+# 7AM
+00 7 * * * /root/bin/TemperatureMonitor.py
+15 7 * * * /root/bin/TemperatureMonitor.py
+30 7 * * * /root/bin/TemperatureMonitor.py
+45 7 * * * /root/bin/TemperatureMonitor.py
+# 8AM
+00 8 * * * /root/bin/TemperatureMonitor.py
+15 8 * * * /root/bin/TemperatureMonitor.py
+30 8 * * * /root/bin/TemperatureMonitor.py
+45 8 * * * /root/bin/TemperatureMonitor.py
+# 9AM
+00 9 * * * /root/bin/TemperatureMonitor.py
+15 9 * * * /root/bin/TemperatureMonitor.py
+30 9 * * * /root/bin/TemperatureMonitor.py
+45 9 * * * /root/bin/TemperatureMonitor.py
+# 10AM
+00 10 * * * /root/bin/TemperatureMonitor.py
+15 10 * * * /root/bin/TemperatureMonitor.py
+30 10 * * * /root/bin/TemperatureMonitor.py
+45 10 * * * /root/bin/TemperatureMonitor.py
+# 11AM
+00 11 * * * /root/bin/TemperatureMonitor.py
+15 11 * * * /root/bin/TemperatureMonitor.py
+30 11 * * * /root/bin/TemperatureMonitor.py
+45 11 * * * /root/bin/TemperatureMonitor.py
+# Noon
+00 12 * * * /root/bin/TemperatureMonitor.py
+15 12 * * * /root/bin/TemperatureMonitor.py
+30 12 * * * /root/bin/TemperatureMonitor.py
+45 12 * * * /root/bin/TemperatureMonitor.py
+# 1PM
+00 13 * * * /root/bin/TemperatureMonitor.py
+15 13 * * * /root/bin/TemperatureMonitor.py
+30 13 * * * /root/bin/TemperatureMonitor.py
+45 13 * * * /root/bin/TemperatureMonitor.py
+# 2PM
+00 14 * * * /root/bin/TemperatureMonitor.py
+15 14 * * * /root/bin/TemperatureMonitor.py
+30 14 * * * /root/bin/TemperatureMonitor.py
+45 14 * * * /root/bin/TemperatureMonitor.py
+# 3PM
+00 15 * * * /root/bin/TemperatureMonitor.py
+15 15 * * * /root/bin/TemperatureMonitor.py
+30 15 * * * /root/bin/TemperatureMonitor.py
+45 15 * * * /root/bin/TemperatureMonitor.py
+# 4PM
+00 16 * * * /root/bin/TemperatureMonitor.py
+15 16 * * * /root/bin/TemperatureMonitor.py
+30 16 * * * /root/bin/TemperatureMonitor.py
+45 16 * * * /root/bin/TemperatureMonitor.py
+# 5PM
+00 17 * * * /root/bin/TemperatureMonitor.py
+15 17 * * * /root/bin/TemperatureMonitor.py
+30 17 * * * /root/bin/TemperatureMonitor.py
+45 17 * * * /root/bin/TemperatureMonitor.py
+# 6PM
+00 18 * * * /root/bin/TemperatureMonitor.py
+15 18 * * * /root/bin/TemperatureMonitor.py
+30 18 * * * /root/bin/TemperatureMonitor.py
+45 18 * * * /root/bin/TemperatureMonitor.py
+# 7PM
+00 19 * * * /root/bin/TemperatureMonitor.py
+15 19 * * * /root/bin/TemperatureMonitor.py
+30 19 * * * /root/bin/TemperatureMonitor.py
+45 19 * * * /root/bin/TemperatureMonitor.py
+# 8PM
+00 20 * * * /root/bin/TemperatureMonitor.py
+15 20 * * * /root/bin/TemperatureMonitor.py
+30 20 * * * /root/bin/TemperatureMonitor.py
+45 20 * * * /root/bin/TemperatureMonitor.py
+# 9PM
+00 21 * * * /root/bin/TemperatureMonitor.py
+15 21 * * * /root/bin/TemperatureMonitor.py
+30 21 * * * /root/bin/TemperatureMonitor.py
+45 21 * * * /root/bin/TemperatureMonitor.py
