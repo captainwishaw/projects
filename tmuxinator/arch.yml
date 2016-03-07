@@ -1,0 +1,21 @@
+# ~/.tmuxinator/arch.yml
+
+name: arch
+root: ~/
+
+windows:
+  - console1:
+      layout: main-vertical
+      panes:
+        - # open bash
+        - # open bash
+  - console2:
+      layout: main-vertical
+      panes:
+        - # open bash
+        - # open bash
+  - console3:
+      layout: main-vertical
+      panes:
+        - # open bash
+        - # open bash
