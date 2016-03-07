@@ -4,18 +4,18 @@ name: arch
 root: ~/
 
 windows:
-  - console1:
+  - console:
       layout: main-vertical
       panes:
         - # open bash
         - # open bash
-  - console2:
+  - tmp:
       layout: main-vertical
       panes:
-        - # open bash
-        - # open bash
-  - console3:
+        - cd ~/tmp
+        - cd ~/tmp
+  - git:
       layout: main-vertical
       panes:
-        - # open bash
-        - # open bash
+        - cd ~/git
+        - cd ~/git
