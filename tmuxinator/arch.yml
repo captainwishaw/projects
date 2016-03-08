@@ -5,17 +5,17 @@ root: ~/
 
 windows:
   - console:
-      layout: main-vertical
+      layout: main-horizontal
       panes:
         - # open bash
         - # open bash
   - tmp:
-      layout: main-vertical
+      layout: main-horizontal
       panes:
         - cd ~/tmp
         - cd ~/tmp
   - git:
-      layout: main-vertical
+      layout: main-horizontal
       panes:
         - cd ~/git
         - cd ~/git
