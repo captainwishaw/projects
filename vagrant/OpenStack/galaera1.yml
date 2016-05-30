@@ -1,0 +1,34 @@
+    #!/usr/bin/env ansible-playbook
+
+---
+- name: Configure Galera 1 server
+  hosts: galera1
+  remote_user: vagrant
+  become: True
+  tasks:
+    - name: apt-get update and install vlan
+      apt: name=vlan update_cache=yes
+
+    - name: include vlan module to /etc/modules
+      shell: echo "8021q" >> /etc/modules
+
+    - name: echo blank line to /etc/network/interfaces
+      shell: echo " " >> /etc/network/interfaces
+
+    - name: echo auto eth1.42 to /etc/network/interfaces
+      shell: echo "auto eth1.42" >> /etc/network/interfaces
+
+    - name: echo iface eth1.42 inet static to /etc/network/interfaces
+      shell: echo "iface eth1.42 inet static" >> /etc/network/interfaces
+
+    - name: echo address 10.0.0.98 to /etc/network/interfaces
+      shell: echo "    address 10.0.0.98" >> /etc/network/interfaces
+
+    - name: echo netmask 255.255.255.0 to /etc/network/interfaces
+      shell: echo "    netmask 255.255.255.0" >> /etc/network/interfaces
+
+    - name: echo     vlan-raw-device eth1 to /etc/network/interfaces
+      shell: echo "    vlan-raw-device eth1" >> /etc/network/interfaces
+
+    - name: reboot server
+      shell: /bin/echo "/sbin/reboot" | /usr/bin/at now + 1 min

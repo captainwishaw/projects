@@ -1,0 +1,34 @@
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+    # Server 1
+    config.vm.define "galera1" do |galera1|
+     galera1.vm.box = "ubuntu/trusty64"
+     galera1.vm.network "private_network", ip: "192.168.56.2"
+     galera1.vm.network "forwarded_port", guest: 80, host: 8080
+     galera1.vm.provider "virtualbox" do |vb|
+        vb.name = "Galera_Cluster_1"
+        vb.customize ["modifyvm", :id, "--memory", "1024"]
+     end
+     galera1.vm.hostname="galera1"
+     galera1.vm.provision "ansible" do |ansible|
+        ansible.playbook = "galaera1.yml"
+     end
+    end
+
+    # Server 2
+    config.vm.define "controller" do |controller|
+     controller.vm.box = "ubuntu/trusty64"
+     controller.vm.network "private_network", ip: "192.168.56.3"
+     controller.vm.network "forwarded_port", guest: 80, host: 8881
+     controller.vm.provider "virtualbox" do |vb|
+        vb.name = "Controller"
+        vb.customize ["modifyvm", :id, "--memory", "1024"]
+    end
+     controller.vm.hostname="controller"
+     controller.vm.provision "ansible" do |ansible|
+        ansible.playbook = "controller.yml"
+     end
+    end
+end
